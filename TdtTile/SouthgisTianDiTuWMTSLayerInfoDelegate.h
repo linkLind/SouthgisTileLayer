@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Southgis_WMTSLayerInfo.h"
-#import "Southgis_WMTSLayer.h"
+#import "SouthgisTdt_LayerInfo.h"
+#import "SouthgisTdtType.h"
 
 @interface SouthgisTianDiTuWMTSLayerInfoDelegate : NSObject
 
--(Southgis_WMTSLayerInfo*)getLayerInfo:(WMTSLayerTypes) tiandituType;
+-(SouthgisTdt_LayerInfo*)getLayerInfo:(WMTSLayerTypes) tiandituType;
 
 @end

@@ -12,7 +12,7 @@
 
 
 
-- (instancetype)initWithTileKey:(AGSTileKey *)tileKey TiledLayerInfo:(Southgis_WMTSLayerInfo *)layerInfo target:(id)target action:(SEL)action{
+- (instancetype)initWithTileKey:(AGSTileKey *)tileKey TiledLayerInfo:(SouthgisTdt_LayerInfo *)layerInfo target:(id)target action:(SEL)action{
     
     if (self = [super init]) {
         self.target = target;

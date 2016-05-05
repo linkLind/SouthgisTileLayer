@@ -50,9 +50,9 @@
 @implementation Southgis_BdWMTSLayerInfoDelegate
 
 
--(Southgis_WMTSLayerInfo*)getLayerInfo:(BDLayerTypes) tiandituType{
+-(SouthgisTdt_LayerInfo*)getLayerInfo:(BDLayerTypes) tiandituType{
     
-    Southgis_WMTSLayerInfo *layerInfo = [[Southgis_WMTSLayerInfo alloc]init];
+    SouthgisTdt_LayerInfo *layerInfo = [[SouthgisTdt_LayerInfo alloc]init];
     //normal parameters
     layerInfo.dpi = _dpi;
     layerInfo.tileHeight = _tileHeight;

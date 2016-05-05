@@ -9,7 +9,7 @@
 #import "SouthgisBaseTiledServiceLayer.h"
 //#import "Southgis_WMTSLayerInfo.h"
 
-@class Southgis_WMTSLayerInfo;
+@class SouthgisTdt_LayerInfo;
 
 /**
  *  @author crash         crash_wu@163.com   , 16-03-31 09:03:14
@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger,BDLayerTypes){
     
 @protected
     //图层信息
-    Southgis_WMTSLayerInfo* _layerInfo;
+    SouthgisTdt_LayerInfo* _layerInfo;
 }
 
 

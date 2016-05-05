@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Southgis_WMTSLayerInfo.h" 
+#import "SouthgisTdt_LayerInfo.h"
 #import <ArcGIS/ArcGIS.h>
 
 /**
@@ -21,8 +21,8 @@
 @property (nonatomic,strong) id target;
 @property (nonatomic,assign) SEL action;
 @property (nonatomic,strong) NSData* imageData;
-@property (nonatomic,strong) Southgis_WMTSLayerInfo* layerInfo;
+@property (nonatomic,strong) SouthgisTdt_LayerInfo* layerInfo;
 
-- (instancetype)initWithTileKey:(AGSTileKey *)tileKey TiledLayerInfo:(Southgis_WMTSLayerInfo *)layerInfo target:(id)target action:(SEL)action;
+- (instancetype)initWithTileKey:(AGSTileKey *)tileKey TiledLayerInfo:(SouthgisTdt_LayerInfo *)layerInfo target:(id)target action:(SEL)action;
 
 @end

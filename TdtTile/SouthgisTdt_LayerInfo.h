@@ -14,7 +14,7 @@
  *
  * WMTS图层信息
  */
-@interface Southgis_WMTSLayerInfo : NSObject
+@interface SouthgisTdt_LayerInfo : NSObject
 
 @property (nonatomic,strong) NSString *url;
 @property (nonatomic,strong) NSString *layerName;

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 zlycare. All rights reserved.
 //
 
-#import "Southgis_WMTSLayerInfo.h"
+#import "SouthgisTdt_LayerInfo.h"
 
-@implementation Southgis_WMTSLayerInfo
+@implementation SouthgisTdt_LayerInfo
 
  
 

@@ -1,16 +1,16 @@
 //
-//  Soutgis_WMTSLayer.h
-//  RTLibrary-ios
+//  SouthgisTdtType.h
+//  TianDituFramework
 //
-//  Created by Jeremy on 16/3/15.
-//  Copyright © 2016年 zlycare. All rights reserved.
+//  Created by 吴小星 on 16/5/5.
+//  Copyright © 2016年 crash. All rights reserved.
 //
 
-#import <ArcGIS/ArcGIS.h>
-#import "Southgis_WMTSLayerInfo.h"
-#import "SouthgisBaseTiledServiceLayer.h"
+#import <Foundation/Foundation.h>
+
+
 /**
- 服务图层类型
+ 天地图服务图层类型
  */
 typedef enum {
     WMTS_VECTOR_MERCATOR = 0,	/*!< WMTS矢量墨卡托投影地图服务 */
@@ -31,39 +31,6 @@ typedef enum {
     WMTS_TERRAIN_ANNOTATION_CHINESE_2000=15,     /*!< WMTS地形国家2000坐标系中文标注 */
 } WMTSLayerTypes;
 
-/**
- * @author Jeremy, 16-03-17 14:03:04
- *
- * WMTS服务图层
- */
-@interface Southgis_WMTSLayer : SouthgisBaseTiledServiceLayer
-{
-@protected
-    //图层信息
-    Southgis_WMTSLayerInfo* _layerInfo;
-   
-}
+@interface SouthgisTdtType : NSObject
 
-/**
- * @author Jeremy, 16-03-17 14:03:16
- *
- * 初始化方法
- *
- * @param wmtsLayerType 图层类型
- * @param url           图层地址
- * @param outError      错误指针
- *
- * @return WMTS图层对象
- */
-- (instancetype)initWithLayerType:(WMTSLayerTypes) wmtsLayerType layerURL:(NSString *)url error:(NSError**) outError;
-/**
- * @author Jeremy, 16-03-29 17:03:29
- *
- * 子类继承父类后，调用此初始化方法
- *
- * @param cachePath 缓存本地地址，为空则不缓存
- *
- * @return WMTS图层对象
- */
-- (instancetype)initWithCachePath:(NSString *)cachePath;
 @end

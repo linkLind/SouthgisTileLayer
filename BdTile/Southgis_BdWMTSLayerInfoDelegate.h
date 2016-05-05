@@ -7,7 +7,7 @@
 //
 
 #import "SouthgisBaseTiledServiceLayer.h"
-#import "Southgis_WMTSLayerInfo.h"
+#import "SouthgisTdt_LayerInfo.h"
 #import "SouthgisBdWMTSLayer.h"
 
 @interface Southgis_BdWMTSLayerInfoDelegate : SouthgisBaseTiledServiceLayer
@@ -22,6 +22,6 @@
  *
  *  @return 返回图层信息
  */
-- (Southgis_WMTSLayerInfo *)getLayerInfo:(BDLayerTypes)wmtsLayerType;
+- (SouthgisTdt_LayerInfo *)getLayerInfo:(BDLayerTypes)wmtsLayerType;
 
 @end
